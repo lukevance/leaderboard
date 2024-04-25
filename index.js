@@ -6,7 +6,7 @@ const { Client } = require("@notionhq/client")
 // Initializing a client
 const notion = new Client({
   auth: process.env.NOTION_TOKEN,
-})
+});
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
